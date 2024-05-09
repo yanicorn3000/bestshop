@@ -1,0 +1,23 @@
+{
+  "name": "bestshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanicorn3000/bestshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanicorn3000/bestshop/issues"
+  },
+  "homepage": "https://github.com/yanicorn3000/bestshop#readme",
+  "dependencies": {
+    "vite": "^5.2.11"
+  }
+}
