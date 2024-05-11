@@ -553,7 +553,7 @@ menu {
   font-weight: 600;
   background-color: var(--redish-accent-color);
   border: 1px solid transparent;
-  padding: 16px 57px;
+  padding: 18px 57px;
   color: var(--white-color);
   border-radius: 23px;
   width: 150px;
@@ -562,6 +562,7 @@ menu {
   border: none;
   top: 100%;
   bottom: 0;
+  height: 50px;
 }
 
 .pricing__button:hover {
@@ -600,7 +601,7 @@ menu {
   background-color: var(--primary-color);
   width: 165px;
   box-shadow: 5px 10px 14px var(--primary-shadow-color);
-  padding: 18px 64px;
+  padding: 17px 64px;
   border: 1px solid transparent;
 }
 
