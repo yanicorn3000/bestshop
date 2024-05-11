@@ -561,7 +561,7 @@ menu {
   position: absolute;
   border: none;
   top: 100%;
-  bottom: 0;
+  transform: translateY(-50%);
   height: 50px;
 }
 
