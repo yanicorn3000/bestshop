@@ -87,10 +87,6 @@ a {
 
 /* STYLES MENU */
 
-menu {
-  height: 100%;
-}
-
 .menu__list {
   display: flex;
   justify-content: flex-end;
@@ -131,10 +127,13 @@ menu {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 0%;
+  transition: width 0.2s ease-in;
 }
 
 .menu__item:hover::after {
   background-color: var(--primary-color);
+  width: 100%;
 }
 /* STYLES HERO */
 
@@ -394,8 +393,8 @@ menu {
   background-color: var(--primary-color);
   position: absolute;
   aspect-ratio: 1 / 1;
+  border-radius: 50%;
   width: 75%;
-  border-radius: 100%;
   top: -5%;
   bottom: 0;
   right: 25%;
