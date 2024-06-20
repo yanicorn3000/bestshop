@@ -1,0 +1,14 @@
+@mixin title($color, $size) {
+  color: $color;
+  font-size: $size;
+  font-family: $complementary-font-family;
+  @content;
+}
+
+@mixin media($size, $direction: min){
+  @media screen and (#{$direction}-width: $size) {
+    @content;
+  }
+}
+
+

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yanicorn3000/bestshop#readme",
   "dependencies": {
+    "sass": "^1.77.6",
     "vite": "^5.2.11"
   }
 }

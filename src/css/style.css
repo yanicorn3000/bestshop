@@ -1,21 +1,21 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
 :root {
   /* FONTS */
 
-  --basic-font-family: "Open Sans", sans-serif;
+/* --basic-font-family: "Open Sans", sans-serif;
   --complementary-font-family: "Raleway", sans-serif;
   --basic-text-font-size: 16px;
   --title-font-size: 49px;
   --subtitle-font-size: 36px;
   --pricing-subtitle-font-size: 20px;
-  --price-font-size: 46px;
+  --price-font-size: 46px; */
 
-  /* COLORS */
+/* COLORS */
 
-  --primary-color: #08a6e4;
+/* --primary-color: #08a6e4;
   --primary-shadow-color: rgba(7, 172, 230, 0.16);
   --redish-accent-color: #fb3b64;
   --green-accent-color: #55dfb4;
@@ -25,41 +25,41 @@
   --light-grey-color: #f7f7f7;
   --white-color: #ffffff;
   --card-border: #e8e9ed;
-}
+} */
 
 /* GLOBAL STYLESE */
 
-body {
+/* body {
   font-optical-sizing: auto;
   font-style: normal;
-}
+} */
 
-.container {
+/* .container {
   margin: 0 auto;
   max-width: 1352px;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3 {
   font-family: var(--complementary-font-family);
-}
+} */
 
 p {
-  font-family: var(--basic-font-family);
+  /* font-family: var(--basic-font-family); */
   font-size: var(--basic-text-font-size);
   color: var(--black-color);
   line-height: 22px;
 }
 
-li {
+/* li {
   font-family: var(--basic-font-family);
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   font-family: var(--basic-font-family);
-}
+} */
 
 /* STYLES HEADER */
 
