@@ -29,37 +29,37 @@
 
 /* GLOBAL STYLESE */
 
-/* body {
+body {
   font-optical-sizing: auto;
   font-style: normal;
-} */
+} 
 
-/* .container {
+.container {
   margin: 0 auto;
   max-width: 1352px;
-} */
+} 
 
-/* h1,
+ h1,
 h2,
 h3 {
   font-family: var(--complementary-font-family);
-} */
+} 
 
 p {
-  /* font-family: var(--basic-font-family); */
+  font-family: var(--basic-font-family);
   font-size: var(--basic-text-font-size);
   color: var(--black-color);
   line-height: 22px;
 }
 
-/* li {
+li {
   font-family: var(--basic-font-family);
-} */
+} 
 
-/* a {
+ a {
   text-decoration: none;
   font-family: var(--basic-font-family);
-} */
+}
 
 /* STYLES HEADER */
 

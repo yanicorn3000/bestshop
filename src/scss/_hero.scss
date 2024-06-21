@@ -1,0 +1,62 @@
+.hero {
+  background-image: url(../assets/Background.png);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: center bottom;
+  background-size: 900px;
+  min-height: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.5em;
+
+  @include media($bp-md) {
+    background-size: 100%;
+    min-height: 842px;
+    font-size: 1.5em;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 30px;
+    margin-top: -100px;
+
+    &-title {
+      @include title($basic-text-color, 2.5em);
+    }
+
+    @include media($bp-md) {
+      margin-top: -170px;
+    }
+  }
+
+  &__cta {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: $primary-color;
+    border-radius: 40px;
+    color: $background-color;
+    font-size: 1em;
+    font-weight: 500;
+    box-shadow: 5px 10px 14px $accent-shadow;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    min-width: max-content;
+
+    @include media($bp-md) {
+      &:hover {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        background-color: $background-color;
+      }
+    }
+  }
+}

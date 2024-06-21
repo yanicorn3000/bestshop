@@ -1,0 +1,36 @@
+.page-footer {
+  width: 100%;
+  height: 89px;
+  background-color: var(--light-grey-color);
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo--small a {
+  font-size: 26px;
+}
+
+.copy {
+  font-size: 11px;
+  color: var(--grey-color);
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6.52px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

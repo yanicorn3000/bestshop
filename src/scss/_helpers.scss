@@ -1,0 +1,18 @@
+%circle {
+  content: "";
+  display: block;
+  height: 63px;
+  width: 63px;
+  border-radius: 100%;
+  position: relative;
+}
+
+%lines {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

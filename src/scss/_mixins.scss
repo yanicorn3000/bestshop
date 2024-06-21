@@ -5,6 +5,13 @@
   @content;
 }
 
+@mixin lines($color) {
+  background-color: $color;
+  @extend %lines;
+  margin-top: 20px;
+  display: none;
+}
+
 @mixin media($size, $direction: min){
   @media screen and (#{$direction}-width: $size) {
     @content;

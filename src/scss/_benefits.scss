@@ -1,0 +1,174 @@
+@use "sass:color";
+
+.benefits {
+  background-color: color.scale($muted-text-color, $lightness: 80%);
+  padding: 50px;
+  font-size: 14px;
+
+  @include media($bp-md) {
+    padding: 105px 0;
+  }
+
+  &__items {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1124px;
+
+      @include media($bp-md) {
+        column-gap: 5%;
+      }
+    }
+  }
+
+  &__single-item {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 55px 30px;
+    text-align: left;
+    width: 100%;
+    border-radius: $basic-border-radius;
+    border: 1px solid $basic-border-color;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    @include media($bp-md) {
+      flex-direction: row;
+      padding: 70px 35px;
+      justify-content: space-between;
+
+      &--reverse {
+        flex-flow: row-reverse;
+        gap: 70px;
+      }
+
+      &--short {
+        width: 55%;
+      }
+    }
+  }
+
+  &__title {
+    @include title($basic-text-color, 2.2em);
+    line-height: 1.4em;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    line-height: 1.5em;
+
+    &::after {
+      @include lines($redish-accent-color);
+      @include media($bp-md) {
+        display: block;
+      }
+    }
+
+    &-line--blue {
+      &::after {
+        @include lines($primary-color);
+        @include media($bp-md) {
+          display: block;
+        }
+      }
+    }
+
+    &-line--green {
+      &::after {
+        @include lines($green-accent-color);
+        @include media($bp-md) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__image {
+    max-width: 400px;
+    position: relative;
+    margin-right: 70px;
+    margin-top: 30px;
+    transform: translateX(45px);
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $redish-accent-color;
+      position: absolute;
+      width: 35%;
+      height: 60%;
+      aspect-ratio: 1 / 1;
+      transform: rotate(45deg) translate(-50%);
+      border-radius: 40px;
+      top: 10%;
+      bottom: 0;
+      right: -10%;
+      z-index: 10;
+    }
+
+    .img-1 {
+      width: 90%;
+      z-index: 11;
+      position: relative;
+    }
+  }
+
+  &__image-2 {
+    max-width: 426px;
+    position: relative;
+    transform: translateX(45px);
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $primary-color;
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      width: 55%;
+      height: 85%;
+      top: -5%;
+      bottom: 0;
+      right: 15%;
+      z-index: 10;
+      transform: translate(-50%);
+    }
+
+    .img-2 {
+      width: 80%;
+      z-index: 11;
+      position: relative;
+    }
+  }
+
+  &__image-3 {
+    background-color: $green-accent-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    @include media($bp-md) {
+      width: 40%;
+      border-top-left-radius: $basic-border-radius;
+      border-top-right-radius: $basic-border-radius;
+      margin-top: 0;
+    }
+
+    .img-3 {
+      width: 70%;
+      transform: translateY(10%);
+    }
+  }
+}
