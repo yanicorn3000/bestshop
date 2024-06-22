@@ -16,3 +16,14 @@
   left: 0;
   right: 0;
 }
+
+%button_basic {
+  border: 1px solid transparent;
+  padding: 16px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  text-wrap: nowrap;
+  color: $background-color;
+}
