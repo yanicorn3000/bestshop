@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .page-contact {
   width: 100%;
   background: $background-color;
@@ -121,24 +123,25 @@
     }
 
     &-button {
+      @extend %button_basic;
       background-color: $primary-color;
-      border-radius: 35px;
-      border: none;
       box-shadow: 5px 10px 14px $accent-shadow;
-      padding: 20px 97px;
-      font-size: 1em;
-      color: $background-color;
-      font-weight: 600;
-      line-height: 18px;
-      width: 226px;
+      padding: 20px;
+      min-width: 226px;
       align-self: flex-end;
-      border: 1px solid transparent;
+      transition: all 0.5s;
+      position: relative;
 
       @include media($bp-md) {
         &:hover {
-          border: 1px solid $primary-color;
-          color: $primary-color;
-          background-color: $background-color;
+          @include button_hover(50px, 70px) {
+            background-color: color.scale($primary-color, $lightness: 20%);
+          }
+        }
+
+        &:hover:after {
+          opacity: 1;
+          right: 20px;
         }
       }
     }

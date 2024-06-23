@@ -40,22 +40,47 @@
     padding: 20px;
     margin-top: 10px;
     background-color: $primary-color;
-    border-radius: 40px;
     color: $background-color;
     font-size: 1em;
     font-weight: 500;
     box-shadow: 5px 10px 14px $accent-shadow;
-    border: 1px solid transparent;
+    border: 1px solid $primary-color;
     text-align: center;
     width: 80%;
     max-width: 500px;
     min-width: max-content;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+
+    span {
+      z-index: 3;
+      position: relative;
+    }
 
     @include media($bp-md) {
       &:hover {
-        border: 1px solid $primary-color;
         color: $primary-color;
-        background-color: $background-color;
+      }
+      &::after {
+        content: "";
+        background: $background-color;
+        position: absolute;
+        z-index: 2;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: scale(0, 0);
+        transition: 0.5s;
+        border-radius: 40px;
+        opacity: 0.9;
+      }
+
+      &:hover::after {
+        transform: scale(1, 1);
       }
     }
   }

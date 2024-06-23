@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .pricing {
   font-size: 16px;
 
@@ -36,7 +38,7 @@
   &__single-item {
     border: 1px solid $redish-accent-color;
     border-radius: 18px;
-    padding: 20px 10px 50px 10px;
+    padding: 10px 10px 30px 10px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -53,11 +55,12 @@
       max-width: 460px;
       flex-direction: column;
       text-align: center;
+      padding: 40px 10px 50px 10px;
     }
 
     &--large {
       border: 1px solid $primary-color;
-      box-shadow: $accent-shadow;
+      box-shadow: 0 -5px 40px $accent-shadow;
       width: 90%;
 
       @include media($bp-md) {
@@ -82,7 +85,7 @@
       }
 
       .price {
-        font-size: 2.5em;
+        font-size: 3em;
         font-weight: 100;
         padding: 5px;
         line-height: 1.2em;
@@ -103,6 +106,12 @@
         font-size: 0.8em;
         font-family: $complementary-font-family;
         font-weight: 700;
+      }
+    }
+
+    &:first-of-type {
+      span:first-of-type {
+        visibility: hidden;
       }
     }
 
@@ -188,38 +197,58 @@
     min-width: 120px;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
+
+    @include media($bp-md) {
+      &:hover {
+        @include button_hover(40px, 60px) {
+          background-color: color.scale($redish-accent-color, $lightness: 20%);
+        }
+      }
+
+      &:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+    }
 
     &-green {
       background-color: $green-accent-color;
       border: 1px solid transparent;
+      transition: 0.5s;
+
+      @include media($bp-md) {
+        &:hover {
+          @include button_hover(40px, 60px) {
+            background-color: color.scale($green-accent-color, $lightness: 20%);
+          }
+        }
+
+        &:hover:after {
+          opacity: 1;
+          right: 10px;
+        }
+      }
     }
 
     &-blue {
       background-color: $primary-color;
       border: 1px solid transparent;
       min-width: 180px;
+      box-shadow: 8px 5px 30px $accent-shadow;
+      transition: 0.5s;
+
+      @include media($bp-md) {
+        &:hover {
+          @include button_hover(20px, 40px) {
+            background-color: color.scale($primary-color, $lightness: 20%);
+          }
+        }
+        &:hover:after {
+          opacity: 1;
+          right: 10px;
+        }
+      }
     }
   }
-}
-
-// .pricing .pricing__button:hover {
-//   border: 1px solid var(--redish-accent-color);
-//   color: var(--redish-accent-color);
-//   background-color: var(--white-color);
-// }
-
-// .button-green:hover {
-//   border: 1px solid var(--green-accent-color);
-//   color: var(--green-accent-color);
-//   background-color: var(--white-color);
-// }
-
-// .button-blue:hover {
-//   border: 1px solid var(--primary-color);
-//   color: var(--primary-color);
-//   background-color: var(--white-color);
-// }
-
-.limited--hidden {
-  visibility: hidden;
 }

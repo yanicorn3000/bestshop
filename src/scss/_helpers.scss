@@ -26,4 +26,17 @@
   font-weight: 700;
   text-wrap: nowrap;
   color: $background-color;
+
+  &::after {
+    content: "»";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+    color: $background-color;
+    font-size: 1.4em;
+    transform: translate(-50%);
+  }
 }
