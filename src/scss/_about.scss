@@ -22,7 +22,7 @@
   }
 
   &__title {
-    @include title($basic-text-color, 2em);
+    @include title($basic-text-color, h2);
     line-height: 1.2em;
 
     @include media($bp-md) {

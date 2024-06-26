@@ -28,7 +28,7 @@
     margin-top: -100px;
 
     &-title {
-      @include title($basic-text-color, 2.5em);
+      @include title($basic-text-color, h1);
     }
 
     @include media($bp-md) {

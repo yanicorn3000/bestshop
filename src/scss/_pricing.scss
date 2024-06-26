@@ -14,8 +14,7 @@
   }
 
   &__title {
-    @include title($basic-text-color, 2em) {
-    }
+    @include title($basic-text-color, h2);
   }
 
   &__items {
@@ -80,7 +79,7 @@
       align-items: center;
 
       h3 {
-        @include title($basic-text-color, 1.5em);
+        @include title($basic-text-color, h3);
         font-weight: 700;
       }
 

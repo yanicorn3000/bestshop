@@ -1,6 +1,8 @@
+@use "sass:map";
+
 @mixin title($color, $size) {
   color: $color;
-  font-size: $size;
+  font-size: map.get($titles, $size);
   font-family: $complementary-font-family;
   @content;
 }
