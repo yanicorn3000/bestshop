@@ -5,7 +5,7 @@
   padding: 50px;
   font-size: 14px;
 
-  @include media($bp-md) {
+  @include media(medium) {
     padding: 105px 0;
   }
 
@@ -19,7 +19,7 @@
       gap: 30px;
       max-width: 1124px;
 
-      @include media($bp-md) {
+      @include media(medium) {
         column-gap: 5%;
       }
     }
@@ -38,7 +38,7 @@
     justify-content: center;
     gap: 30px;
 
-    @include media($bp-md) {
+    @include media(medium) {
       flex-direction: row;
       padding: 70px 35px;
       justify-content: space-between;
@@ -68,7 +68,7 @@
 
     &::after {
       @include lines($redish-accent-color);
-      @include media($bp-md) {
+      @include media(medium) {
         display: block;
       }
     }
@@ -76,7 +76,7 @@
     &-line--blue {
       &::after {
         @include lines($primary-color);
-        @include media($bp-md) {
+        @include media(medium) {
           display: block;
         }
       }
@@ -85,7 +85,7 @@
     &-line--green {
       &::after {
         @include lines($green-accent-color);
-        @include media($bp-md) {
+        @include media(medium) {
           display: block;
         }
       }
@@ -159,7 +159,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    @include media($bp-md) {
+    @include media(medium) {
       width: 40%;
       border-top-left-radius: $basic-border-radius;
       border-top-right-radius: $basic-border-radius;

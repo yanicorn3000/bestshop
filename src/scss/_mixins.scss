@@ -22,7 +22,7 @@
 }
 
 @mixin media($size, $direction: min) {
-  @media screen and (#{$direction}-width: $size) {
+  @media screen and (#{$direction}-width: map.get($breakpoints,$size)) {
     @content;
   }
 }
